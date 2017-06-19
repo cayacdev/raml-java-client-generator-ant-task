@@ -7,6 +7,20 @@
 	<packaging>jar</packaging>
 	<description>Ant Task to generate java client from raml definition</description>
 
+	<scm>
+		<connection>scm:git:git@github.com:jazhead/raml-java-client-generator-ant-task.git</connection>
+		<developerConnection>scm:git:git@github.com:jazhead/raml-java-client-generator-ant-task.git</developerConnection>
+		<url>https://github.com/jazhead/raml-java-client-generator-ant-task</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>Philipp Müller</name>
+			<email>pmueller.wf@gmail.com</email>
+			<timezone>CET</timezone>
+		</developer>
+	</developers>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.ant</groupId>
@@ -68,7 +82,11 @@
 					</execution>
 				</executions>
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+			</plugin>
 		</plugins>
 	</build>
 
