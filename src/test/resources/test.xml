@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<project basedir="." xmlns:ca="antlib:net.sourceforge.clearantlib">
+
+    <property name="temp.dir" value="${java.io.tmpdir}/raml-java-client-generator/" />
+
+    <target name="clean">
+        <delete dir="${temp.dir}" />
+        <mkdir dir="${temp.dir}" />
+    </target>
+
+    <target name="makeTask" depends="clean">
+        <taskdef name="ramltojavaclient" classname="com.github.jazhead.client.codegen.anttask.RamlJavaClientGeneratorTask" />
+    </target>
+
+    <target name="createJsonSchema" depends="makeTask">
+        <ramltojavaclient ramlFile="test.raml" destinationDirectory="${temp.dir}/output" basePackage="de.test"/>
+    </target>
+</project>
