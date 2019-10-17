@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.jazhead</groupId>
 	<artifactId>raml-java-generator-ant-task</artifactId>
-	<version>0.1.2-SNAPSHOT</version>
+	<version>0.1.2</version>
 	<name>raml-java-generator-ant-task</name>
 	<packaging>jar</packaging>
 	<description>Ant Task to generate java client from raml definition</description>
@@ -11,7 +11,7 @@
 		<connection>scm:git:git@github.com:jazhead/raml-java-client-generator-ant-task.git</connection>
 		<developerConnection>scm:git:git@github.com:jazhead/raml-java-client-generator-ant-task.git</developerConnection>
 		<url>https://github.com/jazhead/raml-java-client-generator-ant-task</url>
-	  <tag>HEAD</tag>
+	  <tag>raml-java-generator-ant-task-0.1.2</tag>
   </scm>
 
 	<developers>
@@ -33,7 +33,7 @@
 		<dependency>
 			<groupId>org.mule.raml.codegen</groupId>
 			<artifactId>raml-client-generator-core</artifactId>
-			<version>0.2-SNAPSHOT</version>
+			<version>0.2</version>
 		</dependency>
 
 		<dependency>
