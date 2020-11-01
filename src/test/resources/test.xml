@@ -14,6 +14,6 @@
     </target>
 
     <target name="createJsonSchema" depends="makeTask">
-        <ramltojavaclient ramlFile="test.raml" destinationDirectory="${temp.dir}/output" basePackage="de.test"/>
+        <ramltojavaclient ramlFile="src/test/resources/test.raml" destinationDirectory="${temp.dir}/output" basePackage="de.test"/>
     </target>
 </project>
